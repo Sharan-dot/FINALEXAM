@@ -1,0 +1,23 @@
+d!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Action Attribute</title>
+</head>
+<body>
+    <header>
+        <h1>Post Action Attribute</h1>
+    </header>
+    <main>
+        <h2>http://localhost:3002/send/</h2>
+        <p>The form with the action attribute pointing to <code>http://localhost:3002/send/</code> will not work on GitHub Pages because GitHub Pages is a static hosting service. It does not support running server-side code, which is necessary for handling POST requests to a local server.</p>
+        
+        <h2>https://dry-bayou-18746.herokuapp.com/send/</h2>
+        <p>The form with the action attribute pointing to <code>https://dry-bayou-18746.herokuapp.com/send/</code> will work on GitHub Pages because it points to an external server hosted on Heroku. This server can handle POST requests, and GitHub Pages can interact with external APIs or servers.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 UX220Final</p>
+    </footer>
+</body>
+</html>

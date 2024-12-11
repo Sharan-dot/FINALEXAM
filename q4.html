@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG vs JPG: Pros and Cons</title>
+</head>
+<body>
+    <main>
+        <h1>PNG vs JPG: Pros and Cons</h1>
+        <section>
+            <h2>Advantages of PNG</h2>
+            <ul>
+                <li>Allows for transparency, making it ideal for web graphics and layered designs.</li>
+                <li>Maintains image quality with lossless compression, even after multiple edits.</li>
+                <li>Perfect for images with text or sharp details due to excellent clarity.</li>
+                <li>Well-suited for technical diagrams and screenshots featuring fine details.</li>
+                <li>Compatible with most web browsers and graphic design software.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Drawbacks of PNG</h2>
+            <ul>
+                <li>Produces larger file sizes compared to JPG, which can slow down website performance.</li>
+                <li>Not the best option for storing high-resolution photographs due to its size limitations.</li>
+                <li>Can cause slower load times on pages that heavily rely on PNG images.</li>
+                <li>Has a limited color palette when compared to newer formats like WebP.</li>
+                <li>Lacks native animation support, unlike formats such as GIF.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <copyright-notice></copyright-notice>
+    </footer>
+    <script>
+        class CopyrightNotice extends HTMLElement {
+            connectedCallback() {
+                const year = new Date().getFullYear();
+                this.innerHTML = `&copy; ${year} Image Comparison Study`;
+            }
+        }
+
+        customElements.define('copyright-notice', CopyrightNotice);
+    </script>
+</body>
+</html>

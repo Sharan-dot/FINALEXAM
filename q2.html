@@ -2,14 +2,27 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Magic 8 Ball</title>
     <style>
+        input::placeholder {
+            color: lightgray;
+            font-style: italic;
+        }
+        #answer {
+            color: red;
+            font-size: 2em;
+            font-family: 'Pacifico', cursive;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>The magic 8 ball</h1>
-    <input /><br />
-    <x-magic />
+    <input placeholder="ask me anything" /><br />
+    <x-magic /><x-magic />
     <script>
         class Magic8Ball extends HTMLElement{
             connectedCallback(){
