@@ -2,34 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX220 Final Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" crossorigin="anonymous">
     <style>
-        .push-down{
+        .push-down {
             margin-top: 2em;
         }
-        img{
+        img {
             max-width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <header class="container text-center py-4">
+        <h1>UX220 Final Assignment</h1>
+    </header>
+
+    <nav class="container mb-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="q1.html">Question 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="q2.html">Question 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="q3.html">Question 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="q4.html">Question 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="q5.html">Question 5</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
         <div class="row">
-            <div class="col-md-10">
-                <x-markdown2html src="README.md"></x-markdown2html>
+            <div class="col-md-8">
+                <h2>Welcome</h2>
+                <p>This is the main hub for the UX220 Final Assignment. Use the navigation above to access individual questions and their solutions.</p>
+                <p>Each question demonstrates the principles of responsive design, accessibility, semantic HTML, and custom web components.</p>
             </div>
-            <div class="col-md-2 push-down">
+            <div class="col-md-4 push-down">
                 <x-sitemap />
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="container text-center py-4">
+        <p>&copy; 2024 UX220Final Assignment. All Rights Reserved.</p>
+    </footer>
+
     <script src="https://custom-element.pages.dev/custom-element.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"
-        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
